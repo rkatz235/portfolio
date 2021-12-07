@@ -1,0 +1,21 @@
+.resume-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.resume-page a {
+    text-align: center;
+}
+.resume-page a img {
+    max-width: 563px;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .resume-page a img {
+        width: 80%;
+    }
+}

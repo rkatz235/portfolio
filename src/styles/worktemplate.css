@@ -1,0 +1,116 @@
+.project-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: var(--border);
+}
+.project-text .info{
+    border-right: var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-text .info .title h1 {
+    font-size: 26px;
+    text-transform: capitalize;
+    padding: 30px;
+}
+.project-text .info .info-deets {
+    border-top: var(--border);
+    padding: 30px;
+}
+.project-text .info .info-deets > div {
+    border-bottom: var(--dot-border);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.project-text .info .info-deets div > * {
+    font-size: 18px;
+}
+.project-text .info .info-deets .tag-list {
+    justify-content: flex-start;
+    margin-left: -10px;
+    padding-top: 15px;
+}
+.project-text .info .info-deets .tag-list .tag {
+    padding: 10px;
+}
+.project-text .des {
+    padding: 40px;
+}
+.project-text .des p {
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+.react-slideshow-container {
+    display: block;
+    position: relative;
+}
+.react-slideshow-container .nav.default-nav {
+    position: absolute;
+    top: 100px;
+    height: 120px;
+    border-radius: 10%;
+}
+.react-slideshow-container .nav.default-nav:first-of-type {
+    left: 5%;
+}
+.react-slideshow-container .nav.default-nav:last-of-type {
+    right: 5%;
+}
+.project-slide {
+    padding: 30px 0;
+    max-height: 2000px;
+    overflow: hidden;
+}
+.project-slide .title {
+    padding-bottom: 30px;
+    text-align: center;
+}
+.project-slide .title h2 {
+    font-size: 26px;
+}
+.each-slide {
+    display: flex;
+    justify-content: center;
+}
+.each-slide img {
+    max-width: 973px;
+    width: 80%;
+}
+.project-imgs {
+    display: flex;
+    flex-direction: column;
+}
+.project-imgs img {
+    width: 100%;
+    border-bottom: solid 1px var(--pri-color);
+    padding: 0;
+}
+.project-imgs img:last-child {
+    border-bottom: none;
+}
+@media only screen and (max-width: 990px) {
+    .project-text .info .info-deets {
+        padding-bottom: 0;
+    }
+    .project-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-slide {
+        max-height: 800px;
+        overflow: hidden;
+    }
+    .react-slideshow-container .nav.default-nav:first-of-type {
+        left: 5px;
+    }
+    .react-slideshow-container .nav.default-nav:last-of-type {
+        right: 5px;
+    }
+    .each-slide img {
+        max-width: none;
+        width: 100%;
+        object-fit: cover;
+    }
+}
